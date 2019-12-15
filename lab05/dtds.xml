@@ -1,0 +1,55 @@
+<!DOCTYPE airports [
+        <!ELEMENT airports (row)*>
+        <!ATTLIST airports
+                xmlns:xsi CDATA #REQUIRED>
+        <!ELEMENT row (id|name|country|city)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT country (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        ]>
+<!DOCTYPE flights [
+        <!ELEMENT flights (row)*>
+        <!ATTLIST flights
+                xmlns:xsi CDATA #REQUIRED>
+        <!ELEMENT row (id|plane_id|departure_airport_id|arrival_airport_id|departure_time|arrival_time)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT plane_id (#PCDATA)>
+        <!ELEMENT departure_airport_id (#PCDATA)>
+        <!ELEMENT arrival_airport_id (#PCDATA)>
+        <!ELEMENT departure_time (#PCDATA)>
+        <!ELEMENT arrival_time (#PCDATA)>
+        ]>
+<!DOCTYPE passengers [
+        <!ELEMENT passengers (row)*>
+        <!ATTLIST passengers
+                xmlns:xsi CDATA #REQUIRED>
+        <!ELEMENT row (id|name|birthday|sex|passport_number)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT birthday (#PCDATA)>
+        <!ELEMENT sex (#PCDATA)>
+        <!ELEMENT passport_number (#PCDATA)>
+        ]>
+<!DOCTYPE planes [
+        <!ELEMENT planes (row)*>
+        <!ATTLIST planes
+                xmlns:xsi CDATA #REQUIRED>
+        <!ELEMENT row (id|model|company|number|places)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT model (#PCDATA)>
+        <!ELEMENT company (#PCDATA)>
+        <!ELEMENT number (#PCDATA)>
+        <!ELEMENT places (#PCDATA)>
+        ]>
+<!DOCTYPE tickets [
+        <!ELEMENT tickets (row)*>
+        <!ATTLIST tickets
+                xmlns:xsi CDATA #REQUIRED>
+        <!ELEMENT row (id|flight_id|passenger_id|value|class)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT flight_id (#PCDATA)>
+        <!ELEMENT passenger_id (#PCDATA)>
+        <!ELEMENT value (#PCDATA)>
+        <!ELEMENT class (#PCDATA)>
+        ]>
