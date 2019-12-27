@@ -19,4 +19,4 @@ alter table bd_labs.tickets
 alter table bd_labs.passengers
     add constraint sex_m_or_f check ( sex = 'm' or sex = 'f' ),
     add constraint passport_num_len check ( length(passport_number) = 10),
-    add constraint name_not_empty check ( name != '' )
+    add constraint name_not_empty check ( name != '' );

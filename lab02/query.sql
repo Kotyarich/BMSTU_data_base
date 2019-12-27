@@ -238,7 +238,7 @@ select flights.*
 
 -- 23. Инструкция SELECT, использующая рекурсивное обобщенное табличное
 --     выражение.
--- Полеты самолета 102 по убыванию времени
+-- Полеты самолета 102 по убыванию времени;
 with recursive all_airports_for_flight as (
     select flights.id, flights.departure_time as time, 1 as flight_num
         from bd_labs.flights
